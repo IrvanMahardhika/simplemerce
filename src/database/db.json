@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "username": "IrvanMahardhika",
+      "email": "irvan.mahardhika@yahoo.co.id",
+      "password": "centralretail",
+      "id": 1
+    },
+    {
+      "username": "MariaMargareta",
+      "email": "maria.margareta@gmail.com",
+      "password": "gardutinggi473",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Thule Crossover 2 Backpack 20L",
+      "desc": "A durable everyday backpack designed to keep everything organized and protected while on the go.",
+      "price": "199",
+      "picture": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/40/98/634098_sized_360x1000_rev_1.jpg",
+      "id": 1
+    },
+    {
+      "name": "Thule Crossover 2 Convertible Laptop Bag 15.6\"",
+      "desc": "A versatile business bag that easily converts from a briefcase to a backpack making it perfect for commuting or travel.",
+      "price": "229",
+      "picture": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/41/23/634123_sized_360x1000_rev_1.jpg",
+      "id": 2
+    },
+    {
+      "name": "Thule Subterra Backpack 30L",
+      "desc": "A large and durable travel backpack with electronics protection and a PowerPocket to manage cords between your device and mobile charger.",
+      "price": "139",
+      "picture": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/o_/01/tstb-334_34l_ember_hero_01_sized_360x1000_rev_1.jpg",
+      "id": 3
+    },
+    {
+      "name": "Thule Vea Backpack 25L",
+      "desc": "A rucksack-style backpack designed to transition between the gym and work while keeping active and professional gear separate.",
+      "price": "129",
+      "picture": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/54/40/585440_sized_360x1000_rev_1.jpg",
+      "id": 4
+    },
+    {
+      "name": "The North Face Kaban Backpack",
+      "desc": "Haul 26-liter loads with this sleek pack that's designed with a protective 15\" laptop sleeve and reflectivity for maximum visibility during low light commutes.",
+      "price": "129",
+      "picture": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A2ZEK_6WJ_hero?$262x306$",
+      "id": 5
+    },
+    {
+      "name": "The North Face Access 2 Backpack",
+      "desc": "The updated FlexVent™ suspension system features a flexible yoke built from custom injection-molded shoulder straps, an unbelievably comfortable, padded mesh back panel, and a highly breathable lumbar panel for maximum breathability all day long.",
+      "price": "199",
+      "picture": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A3KUR_FLC_hero?$262x306$",
+      "id": 6
+    },
+    {
+      "name": "The North Face CMYK SE Backpack",
+      "desc": "This Special Edition version of this innovative, modern pack is made from a 4 color engineered material giving the pack a groundbreaking look in a clean silhouette.",
+      "price": "149",
+      "picture": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A3G9D_8BV_hero?$262x306$",
+      "id": 7
+    },
+    {
+      "name": "The North Face Rovara Backpack",
+      "desc": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A37PO_JK3_hero?$262x306$",
+      "price": "125",
+      "picture": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A37PO_JK3_hero?$262x306$",
+      "id": 8
+    },
+    {
+      "name": "Nike Hoops Elite Pro",
+      "desc": "The Nike Hoops Elite Pro Basketball Backpack features multiple small-item pockets and a separate, ventilated compartment for your shoes. Its shoulder straps feature Pro Adapt technology for comfortable carrying to and from the gym.",
+      "price": "80",
+      "picture": "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/muqwamdlzuo1zwep9bbx/hoops-elite-pro-basketball-backpack-F2g5d8.jpg",
+      "id": 9
+    },
+    {
+      "name": "Nike Hurley Wet and Dry Elite",
+      "desc": " The Hurley Wet and Dry Elite Backpack features a waterproof main compartment specially divided so you can carry both wet and dry items together, allowing you to carry 1 bag as you go to and from the beach.",
+      "price": "240",
+      "picture": "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/y1qwlalwh8ukllmqgipy/hurley-wet-and-dry-elite-backpack-Gl1gB3.jpg",
+      "id": 10
+    },
+    {
+      "name": "Nike Hurley Wayfarer II",
+      "desc": "With space to hold your laptop and more, the Hurley Wayfarer II Backpack is designed for comfortable carrying to and from school, the beach or the game. ",
+      "price": "130",
+      "picture": "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/wvvhzayux5t7fysbdra5/hurley-wayfarer-ii-backpack-Tmw7wm.jpg",
+      "id": 11
+    },
+    {
+      "name": "Nike Departure Roller",
+      "desc": "The Nike Departure Roller Bag features an expandable, zippered storage compartment so you can securely transport your items. Multiple compartments help you keep your items organized.",
+      "price": "240",
+      "picture": "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/hpstqngwyfb3elonstsf/departure-roller-bag-Xfq3Lp.jpg",
+      "id": 12
+    },
+    {
+      "name": "Under Armour Carry-On Rolling Suitcase",
+      "desc": "UA Storm technology delivers an element-battling, highly water-resistant finish. Designed to meet most airline carry-on size specifications.",
+      "price": "199",
+      "picture": "https://underarmour.scene7.com/is/image/Underarmour/1287681-001_F?scl=1&fmt=jpg&qlt=80&wid=612&hei=650&size=551,585&cache=on,off&bgc=f0f0f0&resMode=sharp2",
+      "id": 13
+    },
+    {
+      "name": "Under Armour Project Rock 90",
+      "desc": "UA Storm technology delivers an element-battling, highly water-resistant finish. Heavy canvas materials provide ultimate durability.",
+      "price": "160",
+      "picture": "https://underarmour.scene7.com/is/image/Underarmour/1347221-408_SLF_SL?scl=1&fmt=jpg&qlt=80&wid=612&hei=650&size=551,585&cache=on,off&bgc=f0f0f0&resMode=sharp2",
+      "id": 14
+    },
+    {
+      "name": "Under Armour SC30™ Backpack",
+      "desc": "Elastic top panel construction & webbing to store your shoes. Two side water bottle pockets.",
+      "price": "100",
+      "picture": "https://underarmour.scene7.com/is/image/Underarmour/1342661-001_SLF_SL?scl=1&fmt=jpg&qlt=80&wid=612&hei=650&size=551,585&cache=on,off&bgc=f0f0f0&resMode=sharp2",
+      "id": 15
+    },
+    {
+      "name": "Under Armour Pro Series Cam",
+      "desc": "Constructed with premium leather detailing & a tough, synthetic nylon. Main compartment features magnetic closure in the front, two buckles on the side & an internal draw cord for secure storage at all times.",
+      "price": "150",
+      "picture": "https://underarmour.scene7.com/is/image/Underarmour/1306055-001_SLB_SL?template=v65GridLarge&$size=253,311&$wid=281&$hei=345",
+      "id": 16
+    }
+  ]
+}
