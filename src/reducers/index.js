@@ -13,7 +13,7 @@ const AuthReducer = (state = init, a) => {
         case 'LOGOUT_SUCCESS':
             return {...state, id : '', username : '', atc : []};
         case 'ATC_SUCCESS' :
-            return {...state, atc : a.payload.atc}
+            return {...state, atc : a.payload.atc};
         default:
             return state;
     }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 
+import {addToCart} from '../Action/index'
 
 
 class Cart extends Component {
@@ -17,7 +18,11 @@ class Cart extends Component {
 
 
     componentDidMount () {
+        
+
+
         let a = this.props.z
+        a = a.sort((a,b) => a.id-b.id)
         let b = this.props.y
         let hargaKaliQty = a.map(a => a.price*a.qtyATC)
         let total = hargaKaliQty.reduce((a,b) => a+b,0)
@@ -52,6 +57,7 @@ class Cart extends Component {
         let b = this.state.product
         let filter = b.filter(x => x.id!==a)
         this.setState({product:filter})
+        this.props.addToCart(filter)
     }
 
 
@@ -167,4 +173,4 @@ const mapStateToProps = a => {
 }
 
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps,{addToCart})(Cart)

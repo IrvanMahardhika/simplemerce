@@ -41,14 +41,27 @@ class ProductDetail extends Component {
             } else {
                 let b = this.props.z
                 let a = this.state.product
-                a.qtyATC = qty
-                b.push(a)
-                let c = b.map(a => a.qtyATC)
-                let d = c.reduce((a,b) => a+b,0)
-                this.props.addToCart(b)
-                this.setState({qtyCart:d})
-                alert(`Added to cart : ${qty} pcs of ${this.state.product.name}`)
-                this.setState({check:"b"})
+                let f = b.filter(x => x.id !== a.id)
+                let g = b.filter(x => x.id === a.id)
+                    if (g.length>0) {
+                        a.qtyATC = qty+g[0].qtyATC
+                        f.push(a)
+                        let c = f.map(x => x.qtyATC)
+                        let d = c.reduce((a,b) => a+b,0)
+                        this.props.addToCart(f)
+                        this.setState({qtyCart:d})
+                        alert(`Added to cart : ${qty} pcs of ${this.state.product.name}`)
+                        this.setState({check:"b"})
+                    } else {
+                        a.qtyATC = qty
+                        b.push(a)
+                        let c = b.map(a => a.qtyATC)
+                        let d = c.reduce((a,b) => a+b,0)
+                        this.props.addToCart(b)
+                        this.setState({qtyCart:d})
+                        alert(`Added to cart : ${qty} pcs of ${this.state.product.name}`)
+                        this.setState({check:"b"})
+                    }   
             }
         } else {
             alert('Please register, then proceed with login')
