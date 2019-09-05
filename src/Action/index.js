@@ -55,10 +55,3 @@ export const addToCart = (a) => {
         }
     }
 }
-
-
-export const removeAddToCart = () => {
-    return {
-        type : 'REMOVE_ATC_SUCCESS',
-    }
-}
