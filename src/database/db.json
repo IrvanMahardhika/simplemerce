@@ -168,5 +168,36 @@
       "picture": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/bf530dd2f7564358ac98a8bd0135e6e5_9366/Utility_Wheeled_Bat_Bag_Black_BG8574_01_standard.jpg",
       "id": 20
     }
+  ],
+  "usernameCart": [
+    {
+      "username": "IrvanMahardhika",
+      "id": 1
+    }
+  ],
+  "cart": [
+    {
+      "productBought": [
+        {
+          "name": "Thule Subterra Backpack 30L",
+          "desc": "A large and durable travel backpack with electronics protection and a PowerPocket to manage cords between your device and mobile charger.",
+          "price": "139",
+          "picture": "https://cdn1.static-tgdp.com/ui/productimages/approved/std.lang.all/o_/01/tstb-334_34l_ember_hero_01_sized_360x1000_rev_1.jpg",
+          "id": 3,
+          "brand": "Thule",
+          "qtyATC": 1
+        },
+        {
+          "name": "The North Face Kaban Backpack",
+          "desc": "Haul 26-liter loads with this sleek pack that's designed with a protective 15\" laptop sleeve and reflectivity for maximum visibility during low light commutes.",
+          "price": "129",
+          "picture": "https://images.thenorthface.com/is/image/TheNorthFace/NF0A2ZEK_6WJ_hero?$262x306$",
+          "id": 5,
+          "brand": "The North Face",
+          "qtyATC": 1
+        }
+      ],
+      "id": 1
+    }
   ]
 }

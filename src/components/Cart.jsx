@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 
 import {addToCart} from '../Action/index'
+import axios from "axios";
 
 
 class Cart extends Component {
@@ -18,9 +19,6 @@ class Cart extends Component {
 
 
     componentDidMount () {
-        
-
-
         let a = this.props.z
         a = a.sort((a,b) => a.id-b.id)
         let b = this.props.y
@@ -62,7 +60,21 @@ class Cart extends Component {
 
 
     checkOut = () => {
+        let a = this.props.y
+        let b = this.state.product
         this.setState({checkOut:true})
+        axios.post(
+            'http://localhost:15000/usernameCart',
+            {
+                username : a,
+            }
+        );
+        axios.post(
+            'http://localhost:15000/cart',
+            {
+                productBought : b,
+            }
+        )
     }
 
 
@@ -168,7 +180,7 @@ class Cart extends Component {
 const mapStateToProps = a => {
     return {
         z : a.auth.atc,
-        y : a.auth.id
+        y : a.auth.username
     }
 }
 
