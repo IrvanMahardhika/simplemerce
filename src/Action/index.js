@@ -2,7 +2,6 @@ import axios from "axios" ;
 
 // Action creator
 
-
 export const loginUser = (y,z) => {
     return (dispatch) => {
         axios.get(
@@ -15,10 +14,9 @@ export const loginUser = (y,z) => {
                 }
             }
         ).then((res)=>{
-            if (res.data.length == 0) {
+            if (res.data.length === 0) {
                 alert('User not found !');
             } else {
-                alert(`Login success !\n\nWelcome ${res.data[0].username}.`); 
                 localStorage.setItem(
                     "userData",
                     JSON.stringify({id: res.data[0].id, username: res.data[0].username})
@@ -45,5 +43,15 @@ export const logoutUser = () => {
     localStorage.removeItem("userData");
     return {
         type : 'LOGOUT_SUCCESS',
+    }
+}
+
+
+export const addToCart = (a) => {
+    return {
+        type : 'ATC_SUCCESS',
+        payload : {
+            atc:a
+        }
     }
 }

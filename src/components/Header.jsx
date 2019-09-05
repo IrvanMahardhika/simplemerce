@@ -1,20 +1,19 @@
 import React, { Component } from "react";
-import {Link, NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom';
 import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem, Button } from 'reactstrap';
+    DropdownItem, 
+    Button } from 'reactstrap';
 import { connect } from "react-redux";
 
 import {logoutUser} from "../Action/index"
-
 
 class Header extends Component {
 
@@ -36,8 +35,8 @@ class Header extends Component {
     render () {
         if (!this.props.a) {
             return (
-                <div>
-                    <Navbar color="light" light expand="md">
+                <div className="container">
+                    <Navbar light expand="md">
                         <Link to="/">simpleMerce</Link>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
@@ -47,7 +46,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Register" >
-                                        <Button color="primary">Register</Button>
+                                        <Button color="secondary">Register</Button>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -62,8 +61,8 @@ class Header extends Component {
                 )
         } else {
             return (
-                <div>
-                    <Navbar color="light" light expand="md">
+                <div className="container">
+                    <Navbar light expand="md">
                         <Link to="/">simpleMerce</Link>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
@@ -90,16 +89,16 @@ class Header extends Component {
                                     <DropdownMenu right>
                                         <DropdownItem>
                                             <NavItem>
-                                                <NavLink className="nav-link" to="/Login" onClick={this.props.logoutUser} >Log Out</NavLink>
+                                                <NavLink className="nav-link" to="/Login" onClick={this.props.logoutUser}>Log Out</NavLink>
                                             </NavItem>
                                         </DropdownItem>
                                     </DropdownMenu>
-                                </UncontrolledDropdown>
+                                </UncontrolledDropdown> 
                             </Nav>
                         </Collapse>
                     </Navbar>
                 </div>
-                )
+            )
         }
     }
 }
@@ -107,9 +106,8 @@ class Header extends Component {
 // function utk mengambil data di redux state
 const mapStateToProps = b => {
     return {
-        a : b.auth.username
+        a : b.auth.username,
     }
 }
-
 
 export default connect(mapStateToProps,{logoutUser})(Header)

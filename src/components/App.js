@@ -8,6 +8,7 @@ import Home from './Home'
 import ManageProducts from './ManageProducts.jsx'
 import Header from './Header.jsx'
 import ProductDetail from './ProductDetail'
+import Cart from './Cart'
 
 
 const keepLogin = (a) => {
@@ -46,6 +47,7 @@ class App extends Component {
                     <Route path='/Login' component={Login} />
                     <Route path='/ManageProducts' component={ManageProducts} />
                     <Route path='/productdetail/:id' component={ProductDetail} />
+                    <Route path='/Cart' component={Cart} />
                 </BrowserRouter>
             )
         } else {

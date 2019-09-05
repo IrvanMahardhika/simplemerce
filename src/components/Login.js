@@ -48,6 +48,7 @@ class Login extends Component {
                 </div>
             )
         } else {
+            alert(`You have logged in, ${this.props.a}.`)
             return <Redirect to='/'/>
         }
     }
